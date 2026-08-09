@@ -85,13 +85,13 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 56px;
-  max-width: 1400px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
 .intro {
   flex: 1;
-  max-width: 900px;
+  max-width: 780px;
 }
 
 .intro h1 {
@@ -147,7 +147,7 @@ footer {
 
 /* Main Sections */
 .container {
-  max-width: 1400px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 6vw 48px;
 }
