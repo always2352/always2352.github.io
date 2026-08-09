@@ -85,7 +85,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 56px;
-  width: min(1240px, calc(100% - 12vw));
+  width: min(1160px, calc(100% - 18vw));
   margin: 0 auto;
 }
 
@@ -147,7 +147,7 @@ footer {
 
 /* Main Sections */
 .container {
-  width: min(1240px, calc(100% - 12vw));
+  width: min(1160px, calc(100% - 18vw));
   margin: 0 auto;
   padding: 0 0 48px;
 }
@@ -462,12 +462,12 @@ footer {
   grid-template-columns: 260px 1fr;
   align-items: center;
   gap: 42px;
-  padding: 28px 0 28px 20px;
+  padding: 28px 0;
   border-bottom: 1px solid #e2e2e2;
 }
 
 .publication-content {
-  padding-left: 12px;
+  max-width: 780px;
 }
 
 .publication-title {
