@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Yahui Li</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="#about">About Me</a>
+    <a href="#research-interests">Research Interests</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+  </nav>
+
+  <header class="hero" id="about">
+    <div class="hero-container">
+      <div class="intro">
+        <h1>Yahui Li</h1>
+
+        <p>
+          Hi! I'm Yahui Li, a senior undergraduate student in the
+          <a href="https://www.teep.cnmm.tsinghua.edu.cn/zs_183/list.htm" target="_blank" rel="noopener noreferrer">Tsien Excellence in Engineering Program (TEEP)</a>
+          at Tsinghua University, majoring in Theoretical and Applied Mechanics.
+        </p>
+
+        <p>
+          During the summer of 2025, I was a student intern at the University of Notre Dame, advised by
+          <a href="https://energy.nd.edu/people/jianxun-wang/" target="_blank" rel="noopener noreferrer">Prof. Jianxun Wang</a>,
+          where I worked on <strong>deep learning and reinforcement learning for turbulence control.</strong> 
+          During the 2025-2026 academic year, I conducted research on <strong>biomimetic computational fluid dynamics</strong> under the supervision of
+          <a href="https://www.hy.tsinghua.edu.cn/hyen/info/1162/1205.htm" target="_blank" rel="noopener noreferrer">Prof. Weixi Huang</a>
+          at Tsinghua University. 
+          From July to December 2026, I am a research intern at Harvard University, advised by
+          <a href="https://seas.harvard.edu/person/katia-bertoldi" target="_blank" rel="noopener noreferrer">Prof. Katia Bertoldi</a>
+          at Harvard University, working on <strong>the mechanics and experiments of sequential buckling of shell structures</strong>.
+        </p>
+
+      </div>
+
+      <div class="profile">
+        <img
+          src="files/Profile/photo.jpg"
+          alt="Profile photo"
+          class="profile-photo"
+        >
+
+        <div class="profile-info">
+          <p><a href="mailto:liyahui2352@gmail.com">liyahui2352@gmail.com</a></p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/always2352" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/yahui-li-aa2033388" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="files/Profile/YAHUI_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="research-interests">
+      <h2>Research Interests</h2>
+
+      <div class="interest-block">
+        <p class="interest-summary">
+          My research interests center on using the language of mechanics to model and understand real-world physical phenomena, 
+          while integrating machine learning with physics-based methods to enhance computational efficiency and control.
+        </p>
+
+        <p class="interest-inline">
+          Fluid-Structure Interaction;
+          Computational Mechanics;
+          Machine Learning for Physical Systems.
+        </p>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <div class="research-list">
+        <article class="research-item">
+          <div class="research-media research-media-compare">
+            <video
+              src="files/Research/Mosquitoes/No_flapping.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+
+            <video
+              src="files/Research/Mosquitoes/Flapping.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+
+          <div class="research-content">
+            <h3 class="research-title">
+              Flapping-Enhanced Active Olfactory Sampling in Mosquitoes through Near-Field Scalar Transport
+            </h3>
+            <p class="research-authors">
+              <strong>Yahui Li</strong>, Weixi Huang
+            </p>
+            <p class="research-meta">
+              In submission to Biomimetics & Bioinspiration. Supervised by Prof. Weixi Huang.
+            </p>
+            <div class="item-links">
+              <a class="paper-link" href="files/Research/Mosquitoes/Flapping_paper.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-item research-learning">
+          <div class="image-card-media">
+            <img
+              src="files/Research/Turbulence/Control.png"
+              alt="Physics of Fluids publication preview"
+              class="image-contain"
+            >
+          </div>
+
+          <div class="research-content">
+            <h3>Learning-Based Turbulence Control</h3>
+            <div class="research-part">
+              <div class="part-heading">
+                <p class="part-title">Part 1. Conditional Neural Field for Spatial Dimension Reduction of Turbulence Data</p>
+                <a class="paper-link" href="https://pubs.aip.org/aip/pof/article/38/2/025153/3380896/Conditional-neural-field-for-spatial-dimension" target="_blank" rel="noopener noreferrer">PDF</a>
+              </div>
+              <p class="research-authors">
+                Junyi Guo, Pan Du, Xiantao Fan, <strong>Yahui Li</strong>, Jianxun Wang
+              </p>
+              <p class="research-meta">
+                Physics of Fluids 38 (2026). Supervised by Prof. Jianxun Wang.
+              </p>
+            </div>
+
+            <div class="research-part">
+              <p class="part-title">Part 2. Reinforcement Learning for Control in Turbulent Flows</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-item">
+          <div class="research-media">
+            <video
+              id="shell-buckling-video"
+              src="files/Research/Shell_buckling/Deflation_Clamp.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+            <div class="video-speed-controls" aria-label="Shell buckling video playback speed">
+              <button type="button" data-speed="2">2x</button>
+              <button type="button" data-speed="4">4x</button>
+              <button type="button" data-speed="6">6x</button>
+            </div>
+          </div>
+
+          <div class="research-content">
+            <h3>Mechanics and Experiments of Sequential Shell Buckling</h3>
+            <p class="research-meta">
+              Advised by Prof. Katia Bertoldi.
+            </p>
+
+            <div class="research-part">
+              <p class="part-title">Part 1. Buckle and Bulge Sequences Investigation of Balloons</p>
+            </div>
+
+            <div class="research-part">
+              <p class="part-title">Part 2. Ongoing Research</p>
+              <p class="research-description detail-indent">Details are currently confidential and will be shared when available.</p>
+            </div>
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-heading-row">
+        <h2>Projects</h2>
+        <p class="section-note">Click on selected projects to see more details.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-item">
+          <div class="project-media">
+            <video
+              src="files/Projects/Falling_Leaves/falling_leaf.mp4"
+              class="project-video-scale-90"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+          <div class="project-content">
+            <h3>Fluid-Structure Interaction and Differentiable Optimization of Falling Leaves and Seeds</h3>
+            <p class="project-course">
+              course of Physics Simulation
+            </p>
+            <p class="project-authors">
+              Yahui Li, Meitong Guo
+            </p>
+            <div class="item-links">
+              <a class="paper-link" href="files/Projects/Falling_Leaves/Leaves_Poster.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              <a class="paper-link" href="https://github.com/always2352/Falling_Leaves" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div class="project-media">
+            <img
+              src="files/Projects/Motion/Instability.png"
+              alt="Turing instability pattern evolution preview"
+              class="project-image-scale-90"
+            >
+          </div>
+          <div class="project-content">
+            <h3><a href="project-instability.html">Turing Instability and Spatiotemporal Pattern Evolution in Predator-Prey Systems</a></h3>
+            <p class="project-course">
+              course of Stability of Motion
+            </p>
+            <p class="project-authors">
+              Yahui Li
+            </p>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div class="project-media">
+            <video
+              src="files/Projects/PIV/Entrainment_PIV.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+          <div class="project-content">
+            <h3><a href="project-piv.html">PIV Investigation of Entrainment in a Free Jet</a></h3>
+            <p class="project-course">
+              course of Fundamental Mechanics Innovation
+            </p>
+            <p class="project-authors">
+              Yahui Li, Yihan Liu, Mo Mu
+            </p>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div class="project-media">
+            <img
+              src="files/Projects/Turbulent_Boundary/Turbulence_Boundary.png"
+              alt="Turbulent boundary layer analysis preview"
+            >
+          </div>
+
+          <div class="project-content">
+            <h3><a href="project-boundary.html">Channel Turbulent Boundary Layer Analysis</a></h3>
+            <p class="project-course">
+              course of Viscous Fluid
+            </p>
+            <p class="project-authors">
+              Yahui Li
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <div class="publication-list">
+
+        <article class="publication-item">
+          <div class="publication-media">
+            <img
+              src="files/Publications/Flapping.png"
+              alt="Flapping wing aerodynamics preview"
+              class="image-contain"
+            >
+          </div>
+          <div class="publication-content">
+            <p class="publication-title">
+              Flapping-Enhanced Active Olfactory Sampling in Mosquitoes through Near-Field Scalar Transport
+            </p>
+            <p class="publication-authors">
+              <strong>Yahui Li</strong>, Weixi Huang
+            </p>
+            <p class="publication-meta">
+              In submission to Biomimetics & Bioinspiration.
+            </p>
+            <div class="item-links">
+              <a class="paper-link" href="files/Research/Mosquitoes/Flapping_paper.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-item">
+          <div class="publication-media">
+            <img
+              src="files/Publications/ISCAS.jpg"
+              alt="ISCAS 2026 publication preview"
+            >
+          </div>
+          <div class="publication-content">
+            <p class="publication-title">
+              Live Demonstration: Real-Time Event-Based Daily Human Action Recognition with On-Chip Learning on ANP-I
+            </p>
+            <p class="publication-authors">
+              <strong>Yahui Li</strong>, Jilin Zhang, and Hong Chen
+            </p>
+            <p class="publication-meta">
+              IEEE International Symposium on Circuits and Systems (ISCAS) 2026
+            </p>
+            <div class="item-links">
+              <a class="paper-link" href="files/Publications/Live Demonstration Real-time Event-based Daily Human Action Recognition with On-chip learning on ANP-I_final.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-item">
+          <div class="publication-media">
+            <img
+              src="files/Publications/NF.png"
+              alt="Physics of Fluids publication preview"
+              class="image-contain"
+            >
+          </div>
+          <div class="publication-content">
+            <p class="publication-title">
+              Conditional Neural Field for Spatial Dimension Reduction of Turbulence Data
+            </p>
+            <p class="publication-authors">
+              Junyi Guo, Pan Du, Xiantao Fan, <strong>Yahui Li</strong>, Jianxun Wang
+            </p>
+            <p class="publication-meta">
+              Physics of Fluids, 38 (2026)
+            </p>
+            <div class="item-links">
+              <a class="paper-link" href="https://pubs.aip.org/aip/pof/article/38/2/025153/3380896/Conditional-neural-field-for-spatial-dimension" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const progressBar = document.getElementById("scroll-progress");
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = pageHeight > 0 ? (scrollTop / pageHeight) * 100 : 0;
+
+      progressBar.style.width = `${progress}%`;
+    });
+
+    const shellBucklingVideo = document.getElementById("shell-buckling-video");
+    const speedButtons = document.querySelectorAll(".video-speed-controls button");
+    let selectedShellSpeed = 1;
+
+    const applyShellSpeed = () => {
+      if (shellBucklingVideo) {
+        shellBucklingVideo.playbackRate = selectedShellSpeed;
+      }
+    };
+
+    speedButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        selectedShellSpeed = Number(button.dataset.speed);
+        applyShellSpeed();
+
+        speedButtons.forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+      });
+    });
+
+    if (shellBucklingVideo) {
+      shellBucklingVideo.addEventListener("loadedmetadata", applyShellSpeed);
+      shellBucklingVideo.addEventListener("play", applyShellSpeed);
+      shellBucklingVideo.addEventListener("seeked", applyShellSpeed);
+      shellBucklingVideo.addEventListener("ratechange", () => {
+        if (shellBucklingVideo.playbackRate !== selectedShellSpeed) {
+          applyShellSpeed();
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

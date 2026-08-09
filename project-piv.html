@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIV Investigation of Entrainment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="detail-page">
+    <a class="back-link" href="index.html#projects">Back to Projects</a>
+    <h1>PIV Investigation of Entrainment in a Free Jet</h1>
+    <p class="detail-meta">Course of Fundamental Mechanics Innovation. </p>
+    </p> Yahui Li, Yihan Liu, Mo Mu.</p>
+
+    <section class="detail-section">
+      <h2>Problem Statement</h2>
+      <p>
+        This project investigates the mechanism of a free jet, with a particular focus on its startup and mixing processes. 
+        The central question is how the jet boundary evolves over time and how the surrounding fluid is progressively entrained 
+        into the jet during its development.
+      </p>
+
+      <div class="detail-media">
+      <video src="files/Projects/PIV/Entrainment_PIV.mp4" autoplay loop muted playsinline controls></video>
+    </div>
+    </section>
+
+    <section class="detail-section">
+      <h2>Velocity Field and Pathline Integration</h2>
+      <p>
+        The basic velocity field is reconstructed from particle image velocimetry (PIV) measurements.
+        Based on the measured Eulerian velocity field, particle pathlines are obtained by integrating the velocity field in time.
+        This provides a direct way to track fluid particles during the unsteady jet evolution.
+      </p>
+
+      <div class="equation-block">
+        <p class="equation-label">Pathline integration</p>
+        <div class="equation">
+          <div class="formula-row">
+            <span class="fraction"><span>dx</span><span>dt</span></span>
+            <span>= u(x, y, t),</span>
+            <span class="formula-gap"></span>
+            <span class="fraction"><span>dy</span><span>dt</span></span>
+            <span>= v(x, y, t)</span>
+          </div>
+        </div>
+      </div>
+
+      <figure class="detail-figure">
+        <img
+          src="files/Projects/PIV/Unsteady_Establish.png"
+          alt="Unsteady startup process of the free jet"
+        >
+        <figcaption>Unsteady startup process of the free jet.</figcaption>
+      </figure>
+    </section>
+
+    <section class="detail-section">
+      <h2>LCS Analysis</h2>
+      <p>
+        Then, Lagrangian coherent structures (LCS) are introduced to identify material boundaries in the unsteady jet.
+        This analysis helps us understand how ambient fluid is entrained during evolving.
+      </p>
+      <p>
+        In the forward-time integration, the front part shows laminar boundary, which remains highly symmetric and stable.
+        There is almost no cross-boundary momentum exchange, indicating that entrainment has not yet developed.
+      </p>
+      <p>
+        On the latter part, fluid particles originally located in the ambient environment can be repelled into the main jet region, producing cross-boundary mixing.
+        Meanwhile, the material line continuously expands in the y direction, indicating that the mixing strength increases as the jet evolves.
+      </p>
+
+      <figure class="detail-figure">
+        <img
+          src="files/Projects/PIV/LCS_Evolution_FORWARD.gif"
+          alt="Forward-time LCS evolution of free-jet entrainment"
+        >
+        <figcaption>Forward-time LCS evolution and entrainment boundary expansion.</figcaption>
+      </figure>
+    </section>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Channel Turbulent Boundary Layer Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="detail-page">
+    <a class="back-link" href="index.html#projects">Back to Projects</a>
+
+    <h1>Channel Turbulent Boundary Layer Analysis</h1>
+    <p class="detail-meta">Course of Viscous Fluid. Yahui Li.</p>
+
+    <section class="detail-section">
+      <h2>Project Overview</h2>
+      <p>
+        This course project investigates the turbulent boundary layer in channel flow using direct numerical simulation (DNS) data. 
+        The analysis focuses on the mean velocity profile, Reynolds-stress anisotropy and the near-wall ejection-sweep cycle. 
+        The objective is to relate classical wall-turbulence theory to the statistical characteristics and coherent structures 
+        observed in turbulent flows.
+      </p>
+
+      <figure class="detail-figure">
+        <img
+          src="files/Projects/Turbulent_Boundary/Overview.png"
+          alt="Schematic of channel turbulent boundary layer structure"
+          class="detail-image-scale-90"
+        >
+        <figcaption>Schematic of the channel flow</figcaption>
+      </figure>
+    </section>
+
+    <section class="detail-section">
+      <h2>Mean Velocity Distribution</h2>
+      <p>
+        The mean velocity profile is first examined in wall units to identify the characteristic regions of turbulent channel flow. 
+        The DNS results are then compared with the classical law of the wall to assess the agreement between simulation data and 
+        theoretical predictions.
+      </p>
+
+      <div class="equation-block">
+        <p class="equation-label">Viscous sublayer</p>
+        <div class="equation">
+          <div class="formula-row">
+            <span>U<sup>+</sup> = y<sup>+</sup></span>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        In this region, viscous shear stress dominates the momentum transfer. For larger wall-normal distance, especially when
+        y<sup>+</sup> &gt; 30, the velocity profile approximately follows the logarithmic law.
+      </p>
+
+      <div class="equation-block">
+        <p class="equation-label">Log-law region</p>
+        <div class="equation">
+          <div class="formula-row">
+            <span>U<sup>+</sup> =</span>
+            <span class="fraction"><span>1</span><span>&kappa;</span></span>
+            <span>ln(y<sup>+</sup>) + B</span>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        Farther from the wall, the DNS profile slightly deviates from the logarithmic law. This deviation is expected in channel flow 
+        because the derivation of the log law assumes an approximately constant total shear stress, while the total shear stress 
+        decreases nearly linearly with wall-normal position.
+      </p>
+
+      <figure class="detail-figure">
+        <img
+          src="files/Projects/Turbulent_Boundary/Velocity_Profile.png"
+          alt="Mean Velocity Profile"
+          class="detail-image-scale-90"
+        >
+        <figcaption>Comparison of the DNS mean velocity profile with the classical law of the wall.</figcaption>
+      </figure>
+    </section>
+
+    <section class="detail-section">
+      <h2>Lumley Triangle Analysis</h2>
+      <p>
+        To examine the geometric state of turbulence, the anisotropy of the Reynolds-stress tensor is analyzed using the Lumley triangle.
+        The trajectory reflects how the turbulence structure changes from the wall toward the channel center.
+      </p>
+
+      <div class="analysis-list">
+        <p>
+          <strong>Near-wall region:</strong>
+          wall blocking strongly suppresses the wall-normal fluctuation v', so the turbulence tends toward a two-component state dominated by streamwise and spanwise fluctuations.
+        </p>
+        <p>
+          <strong>Buffer layer:</strong>
+          the trajectory moves toward the one-component limit. The production term injects energy mainly into streamwise fluctuation u', producing a rod-like anisotropic state.
+        </p>
+        <p>
+          <strong>Core region:</strong>
+          as the flow approaches the channel center, mean shear weakens and pressure-strain redistribution transfers energy from u' to v' and w'. The turbulence gradually recovers toward isotropy.
+        </p>
+      </div>
+
+      <figure class="detail-figure">
+        <img
+          src="files/Projects/Turbulent_Boundary/Lumley.png"
+          alt="Lumley Triangle"
+          class="detail-image-scale-90"
+        >
+        <figcaption>Evolution of Reynolds-stress anisotropy in the Lumley triangle.</figcaption>
+      </figure>
+    </section>
+
+    <section class="detail-section">
+      <h2>Ejection-Sweep Mechanism</h2>
+      <p>
+        The wall-normal velocity fluctuation v' shows strong intermittency in the near-wall region.
+        Both ejection and sweep events appear as streamwise-elongated but spanwise-narrow structures.
+        This fragmented morphology suggests that the vertical motion in the buffer layer is not simply caused by direct wall impact from large-scale outer-layer turbulence.
+      </p>
+      <p>
+        Instead, the small-scale structure indicates a local near-wall generation mechanism.
+        Positive and negative v' regions appear side-by-side in the spanwise direction, which provides kinematic evidence for quasi-streamwise vortices:
+        rotation naturally induces upward motion on one side and downward motion on the other side.
+      </p>
+
+      <figure class="detail-figure">
+        <img
+          src="files/Projects/Turbulent_Boundary/V_fluc.png"
+          alt="Instantaneous wall-normal velocity fluctuation"
+        >
+        <figcaption>Instantaneous wall-normal velocity fluctuation (v') in the near-wall region</figcaption>
+      </figure>
+
+      <figure class="detail-figure">
+        <img
+          src="files/Projects/Turbulent_Boundary/Q2Q4.png"
+          alt="Q2 and Q4 events with in-plane fluctuating velocity vectors"
+        >
+        <figcaption>Q2/Q4 events and in-plane fluctuating velocity vectors in the near-wall region.</figcaption>
+      </figure>
+
+      <div class="analysis-list">
+        <p> <p>
+        <p>
+          <strong>Q4 sweep events:</strong>
+          the vector field shows clear spreading features in sweep regions. High-speed fluid moves toward the wall and is slowed by the wall constraint, so vertical compression is accompanied by horizontal spreading.
+        </p>
+        <p>
+          <strong>Q2 ejection events:</strong>
+          the vector field shows local gathering features, corresponding to low-speed fluid being lifted away from the wall.
+          These ejections are closely related to the upward branch of near-wall vortical motion.
+        </p>
+        <p>
+          <strong>Spanwise transport:</strong>
+          between adjacent Q4 and Q2 regions, the in-plane arrows exhibit a strong spanwise component w'.
+          This connects sweep and ejection events and supports the interpretation that quasi-streamwise vortices drive local rolling, lateral transport, and lifting.
+        </p>
+      </div>
+
+    </section>
+  </main>
+</body>
+
+</html>
